@@ -8,11 +8,11 @@ export interface Estudiante {
 }
 
 const ESTUDIANTES_DATA: ITop[] = [
-  {Nombre: 'Allan Chacon', Carnet: '2015141007', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
-  {Nombre: 'Allan Chacon', Carnet: '2015141007', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
-  {Nombre: 'Allan Chacon', Carnet: '2015141007', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
-  {Nombre: 'Allan Chacon', Carnet: '2015141007', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
-  {Nombre: 'Allan Chacon', Carnet: '2015141007', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
+  {Nombre: 'Carlos Ramirez', Carnet: '2222222222', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
+  {Nombre: 'Carlos Ramirez', Carnet: '2222222222', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
+  {Nombre: 'Carlos Ramirez', Carnet: '2222222222', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
+  {Nombre: 'Carlos Ramirez', Carnet: '2222222222', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
+  {Nombre: 'Carlos Ramirez', Carnet: '2222222222', NombreSedeXTEC: 'Cartago', Cantidad_Material: 30},
 ];
 
 @Component({
