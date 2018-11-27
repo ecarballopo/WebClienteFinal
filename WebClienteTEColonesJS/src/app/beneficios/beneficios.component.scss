@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+
+body{
+  background: #DEDEDE;
+  display: flex;
+  min-height: 100vh;
+}
+
+#frmNuevo{
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #C2CFF1;
+  padding: 20px 40px 25px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+}
+
+#frmMaterial{
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #C2CFF1;
+  padding: 30px 40px 25px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  display: inline-block;
+  text-align: center;
+}
+
+#crearMaterial{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+#modiMaterial{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+
+.entradas{
+  display: inline-block;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5%;
+  font-size: 15px;
+}
+
+#estado{
+  position: absolute;
+  top: 24%;
+  left: 55%;
+  height: 25px;
+  width: 25px;
+
+}
+
+#estMat{
+  position: absolute;
+  top: 24%;
+  left: 60%;
+  height: 25px;
+  width: 25px;
+
+}
+
+.listBox{
+width: 45%;
+font-size: 15px;
+padding: 10px;
+margin-top: 5%;
+float: left;
+margin-inline-end: 5%;
+border: 1px solid #000;
+}
+
+input[type="submit"]{
+display: block;
+padding: 10px;
+width: 100%;
+margin-top: 10%;
+font-size: 15px;
+background: #2B82F1;
+color: #FFFFFF;
+cursor: pointer;
+}

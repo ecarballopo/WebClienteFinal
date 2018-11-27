@@ -36,6 +36,8 @@ import { TopEstudiantesComponent } from './top-estudiantes/top-estudiantes.compo
 // import { AccionTecolonesContenedorComponent } from './accion-tecolones-contenedor/accion-tecolones-contenedor.component';
 import { AdministracionMaterialesComponent } from './administracion-materiales/administracion-materiales.component';
 import { AccionTecolonesContenedorComponent } from './accion-tecolones-contenedor/accion-tecolones-contenedor.component';
+import { PromocionesComponent } from './promociones/promociones.component';
+import { BeneficiosComponent } from './beneficios/beneficios.component';
 
 // Pass the fusioncharts library and chart modules
 
@@ -57,7 +59,9 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, FusionTheme);
     GraficoFilaComponent,
     TopEstudiantesComponent,
     AdministracionMaterialesComponent,
-    AccionTecolonesContenedorComponent
+    AccionTecolonesContenedorComponent,
+    PromocionesComponent,
+    BeneficiosComponent
    ],
   imports: [
     BrowserModule,

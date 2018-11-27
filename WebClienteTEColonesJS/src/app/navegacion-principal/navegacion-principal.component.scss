@@ -46,25 +46,16 @@ p{
   color: white;
 }
 
-#botonEstadisticas{
+.boton{
   background: #002C5C;
   width: 100%;
 }
 
-#botonPuntos{
-  background: #002C5C;
-  width: 100%;
-}
-
-#botonPuntos:hover{
+.boton:hover{
   background-color: #2B82F1;
   width: 100%;
 }
 
-#botonEstadisticas:hover{
-  background-color: #2B82F1;
-  width: 100%;
-}
 
 .mat-list-item {
   margin-top: 40px;

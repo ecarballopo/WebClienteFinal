@@ -15,6 +15,8 @@ export class NavegacionPrincipalComponent {
   DashboardSelected: boolean;
   AccionTecolonesSelected: boolean;
   MaterialSelected: boolean;
+  PromocionSelected: boolean;
+  BeneficioSelected: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -36,17 +38,39 @@ export class NavegacionPrincipalComponent {
     this.DashboardSelected = true;
     this.AccionTecolonesSelected = false;
     this.MaterialSelected = false;
+    this.PromocionSelected = false;
+    this.BeneficioSelected = false;
   }
 
   selecAccionTecolones() {
     this.DashboardSelected = false;
     this.AccionTecolonesSelected = true;
     this.MaterialSelected = false;
+    this.PromocionSelected = false;
+    this.BeneficioSelected = false;
   }
 
   selectMaterial() {
     this.DashboardSelected = false;
     this.AccionTecolonesSelected = false;
     this.MaterialSelected = true;
+    this.PromocionSelected = false;
+    this.BeneficioSelected = false;
+  }
+
+  selectPromocion() {
+    this.DashboardSelected = false;
+    this.AccionTecolonesSelected = false;
+    this.MaterialSelected = false;
+    this.PromocionSelected = true;
+    this.BeneficioSelected = false;
+  }
+
+  selectBeneficio() {
+    this.DashboardSelected = false;
+    this.AccionTecolonesSelected = false;
+    this.MaterialSelected = false;
+    this.PromocionSelected = false;
+    this.BeneficioSelected = true;
   }
 }

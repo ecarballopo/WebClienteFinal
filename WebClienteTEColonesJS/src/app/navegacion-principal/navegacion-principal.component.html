@@ -29,18 +29,29 @@
 
           <mat-nav-list>
             <a mat-list-item >
-              <button mat-button id="botonEstadisticas" (click)="selectDashboard()">
+              <button mat-button id="botonEstadisticas" class = "boton" (click)="selectDashboard()">
                 <p> Mis estadisticas </p>
               </button>
             </a>
             <a mat-list-item>
-              <button mat-button id="botonPuntos" (click)="selecAccionTecolones()">
+              <button mat-button id="botonPuntos" class = "boton" (click)="selecAccionTecolones()">
                 <p> Cambio de puntos </p>
               </button>
             </a>
             <a mat-list-item >
-              <button mat-button id="botonEstadisticas" (click)="selectMaterial()">
+              <button mat-button id="botonMaterial" class = "boton" (click)="selectMaterial()">
                 <p> Agregar Material </p>
+              </button>
+            </a>
+
+            <a mat-list-item >
+              <button mat-button id="botonPromociones" class = "boton" (click)="selectPromocion()">
+                <p> Promociones </p>
+              </button>
+            </a>
+            <a mat-list-item >
+              <button mat-button id="botonBeneficios" class = "boton" (click)="selectBeneficio()">
+                <p> Beneficios </p>
               </button>
             </a>
           </mat-nav-list>
@@ -54,6 +65,12 @@
           </div>
           <div class="Contenedor" *ngIf="MaterialSelected">
             <app-administracion-materiales></app-administracion-materiales>
+          </div>
+          <div class="Contenedor" *ngIf="PromocionSelected">
+            <app-promociones></app-promociones>
+          </div>
+          <div class="Contenedor" *ngIf="BeneficioSelected">
+            <app-beneficios></app-beneficios>
           </div>
 
           <!-- Add Content Here -->
