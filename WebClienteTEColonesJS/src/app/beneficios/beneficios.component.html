@@ -1,3 +1,31 @@
-<p>
-  beneficios works!
-</p>
+<div>
+    <form id= "frmNuevo">
+
+      <h2 id="crearBeneficio">Nuevo Beneficio</h2>
+      <div>
+        <input id="nombreBeneficio" class= "entradas" type="text" placeholder="Beneficio" name="nomBeneficio">
+        <input id="descripcionBeneficio" class= "entradas" type="text" placeholder="Descripcion Beneficio" name="desBeneficio">
+        <input id="equivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="equiTecolones">
+        <input type="submit" value="Crear Beneficio">
+
+      </div>
+      </form>
+
+
+    <form id="frmBeneficio">
+
+      <h2 id="modiBeneficio">Modificacion de Beneficio</h2>
+      <div>
+        <select class= "listBox" name="TipoBeneficio">
+          <option>Beneficio</option>
+        </select>
+        <label id="estBene">Estado Beneficio</label>
+        <input type="checkbox" id="estado" value="first_checkbox">
+        <input id="moddescripcionBeneficio" class= "entradas" type="text" placeholder="Descripcion Beneficio" name="modDesBeneficio">
+        <input id="modequivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="modEquiTecolones">
+        <input type="submit" value="Modificar Beneficio">
+
+      </div>
+      </form>
+
+    </div>

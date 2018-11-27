@@ -1,13 +1,13 @@
 <div>
   <form id= "frmNuevo">
 
-    <h2 id="crearMaterial">Nuevo Material</h2>
+    <h2 id="crearPromocion">Nueva Promocion</h2>
     <div>
-      <input id="nombreMaterial" class= "entradas" type="text" placeholder="Material" name="nomMaterial">
-      <input id="descripcionMaterial" class= "entradas" type="text" placeholder="Descripcion Material" name="desMaterial">
-      <input id="pesoBaseMaterial" class= "entradas" type="number" min="1" placeholder="Peso Base" name="pesBase">
-      <input id="equivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="equiTecolones">
-      <input type="submit" value="Crear Material">
+      <input id="nombrePromocion" class= "entradas" type="text" placeholder="Promocion" name="nomPromocion">
+      <input id="descripcionPromocion" class= "entradas" type="text" placeholder="Descripcion de la Promocion" name="desPromocion">
+      <input id="fechaInicio" class= "entradas" type="date" placeholder="Fecha Inicio" name="feIni">
+      <input id="fechaFin" class= "entradas" type="date" placeholder="Fecha Fin" name="feFi">
+      <input type="submit" value="Crear Promocion">
 
     </div>
     </form>
@@ -18,14 +18,14 @@
     <h2 id="modiMaterial">Modificacion de Material</h2>
     <div>
       <select class= "listBox" name="TipoMaterial">
-        <option>Material</option>
+        <option>Promocion</option>
       </select>
-      <label id="estMat">Estado Material</label>
+      <label id="estMat">Estado Promocion</label>
       <input type="checkbox" id="estado" value="first_checkbox">
-      <input id="moddescripcionMaterial" class= "entradas" type="text" placeholder="Descripcion Material" name="modDesMaterial">
-      <input id="modpesoBaseMaterial" class= "entradas" type="number" min="1" placeholder="Peso Base" name="modPesBase">
-      <input id="modequivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="modEquiTecolones">
-      <input type="submit" value="Modificar Material">
+      <input id="moddescripcionPromocion" class= "entradas" type="text" placeholder="Descripcion Promocion" name="modDesPromocion">
+      <input id="modFechaInicio" class= "entradas" type="date" placeholder="Fecha Inicio" name="modFechaInicio">
+      <input id="modFechaFin" class= "entradas" type="date" placeholder="Fecha Fin" name="modFechaFin">
+      <input type="submit" value="Modificar Promocion">
 
     </div>
     </form>
