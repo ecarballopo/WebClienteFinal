@@ -1,0 +1,69 @@
+<div class="ContenedorPrincipal">
+    <div class = "ContenedorBarraHerramientas">
+        <mat-toolbar-row  color="primary">
+          <button
+            id="botonMenu"
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle();">
+            <mat-icon aria-label="Side nav toggle icon" color="#FFFFFF" id="menu"> menu</mat-icon>
+          </button>
+            <img src = "../assets/imagenes/TEColonesConFondoAzul.png" style="height:45px; width:250px;
+            position: absolute; top: 5px"
+            routerLink="/navegacion-principal"/>
+          <span class="example-spacer"></span>
+
+          <mat-icon  class="example-icon">account_circle</mat-icon>
+          <mat-icon  class="example-icon">contact_support</mat-icon>
+
+        </mat-toolbar-row>
+      </div>
+
+      <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+            [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+            [mode]="(isHandset$ | async) ? 'over' : 'side'"
+            opened="false"
+            fixedTopGap="60">
+
+          <mat-nav-list>
+            <a mat-list-item >
+              <button mat-button id="botonEstadisticas" (click)="selectDashboard()">
+                <p> Mis estadisticas </p>
+              </button>
+            </a>
+            <a mat-list-item>
+              <button mat-button id="botonPuntos" (click)="selecAccionTecolones()">
+                <p> Cambio de puntos </p>
+              </button>
+            </a>
+            <a mat-list-item >
+              <button mat-button id="botonEstadisticas" (click)="selectMaterial()">
+                <p> Agregar Material </p>
+              </button>
+            </a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <div class="Contenedor" *ngIf="DashboardSelected">
+            <app-cuadricula-dashboard></app-cuadricula-dashboard>
+          </div>
+          <div class="Contenedor" *ngIf="AccionTecolonesSelected">
+            <app-accion-tecolones-contenedor></app-accion-tecolones-contenedor>
+          </div>
+          <div class="Contenedor" *ngIf="MaterialSelected">
+            <app-administracion-materiales></app-administracion-materiales>
+          </div>
+
+          <!-- Add Content Here -->
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+</div>
+
+
+
+
+
+
+
