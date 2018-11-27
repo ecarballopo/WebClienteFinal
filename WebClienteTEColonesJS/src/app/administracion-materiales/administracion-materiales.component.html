@@ -1,18 +1,34 @@
 
-
 <div>
-<form>
+  <form id= "frmNuevo">
 
-  <img src = "../assets/imagenes/TEColonesSinFondo.png" style="height:80px; width: 450px"/>
-  <h2 id="AdmiMaterial">Administrar Materiales</h2>
-  <div>
-    <input id="nombreMaterial" type="text" placeholder="Material" name="material">
-    <input id="caracteristicaMaterial" type="text" placeholder="Descripcion Material" name="desMaterial">
-    <input id="pesoBaseMaterial" type="text" placeholder="Peso Base" name="pesBase">
-    <input id="equivalenciaTecolones" type="text" placeholder="Equivalencia Tecoloones" name="equiTecolones">
-    <input type="submit" value="Crear Materrial">
+    <h2 id="crearMaterial">Nuevo Material</h2>
+    <div>
+      <input id="nombreMaterial" class= "entradas" type="text" placeholder="Material" name="nomMaterial">
+      <input id="descripcionMaterial" class= "entradas" type="text" placeholder="Descripcion Material" name="desMaterial">
+      <input id="pesoBaseMaterial" class= "entradas" type="number" min="1" placeholder="Peso Base" name="pesBase">
+      <input id="equivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="equiTecolones">
+      <input type="submit" value="Crear Material">
+
+    </div>
+    </form>
+
+
+  <form id="frmMaterial">
+
+    <h2 id="modiMaterial">Modificacion de Material</h2>
+    <div>
+      <select class= "listBox" name="TipoMaterial">
+        <option>Material</option>
+      </select>
+      <label id="estMat">Estado Material</label>
+      <input type="checkbox" id="estado" value="first_checkbox">
+      <input id="moddescripcionMaterial" class= "entradas" type="text" placeholder="Descripcion Material" name="modDesMaterial">
+      <input id="modpesoBaseMaterial" class= "entradas" type="number" min="1" placeholder="Peso Base" name="modPesBase">
+      <input id="modequivalenciaTecolones" class= "entradas" type="number" min="1" placeholder="Equivalencia Tecolones" name="modEquiTecolones">
+      <input type="submit" value="Modificar Material">
+
+    </div>
+    </form>
+
   </div>
-
-
-</form>
-</div>

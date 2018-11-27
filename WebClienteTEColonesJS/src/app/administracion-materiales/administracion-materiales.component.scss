@@ -12,48 +12,72 @@ body{
   min-height: 100vh;
 }
 
-form{
+#frmNuevo{
   margin: auto;
   width: 50%;
   max-width: 500px;
   background: #C2CFF1;
-  padding: 30px;
+  padding: 20px 40px 25px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  left: 20%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
 }
 
-#AdmiMaterial{
+#frmMaterial{
+  margin: auto;
+  width: 50%;
+  max-width: 500px;
+  background: #C2CFF1;
+  padding: 30px 40px 25px;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  display: inline-block;
+  text-align: center;
+}
+
+#crearMaterial{
   text-align: center;
   margin-bottom: 20px;
   font-size: 25px;
 }
 
-#material{
-  display: block;
+#modiMaterial{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+
+.entradas{
+  display: inline-block;
   padding: 10px;
   width: 100%;
   margin-top: 5%;
   font-size: 15px;
 }
 
-#desMaterial{
-  display: block;
-  padding: 10px;
-  width: 45%;
-  margin-top: 5%;
-  font-size: 15px;
-  float: left;
-  margin-inline-end: 5%;
+#estado{
+  position: absolute;
+  top: 24%;
+  left: 55%;
+  height: 25px;
+  width: 25px;
+
 }
 
-#pesBase{
-  display: block;
-  padding: 10px;
-  width: 50%;
-  margin-top: 5%;
-  font-size: 15px;
+#estMat{
+  position: absolute;
+  top: 24%;
+  left: 60%;
+  height: 25px;
+  width: 25px;
+
 }
 
 .listBox{
@@ -64,40 +88,6 @@ margin-top: 5%;
 float: left;
 margin-inline-end: 5%;
 border: 1px solid #000;
-}
-
-#equiTecolones{
-position: relative;
-top: 10px;
-display: block;
-padding: 10px;
-width: 100%;
-margin-top: 5%;
-font-size: 15px;
-}
-
-#correo{
-display: block;
-padding: 10px;
-width: 100%;
-margin-top: 5%;
-font-size: 15px;
-}
-
-#contraseña{
-display: block;
-padding: 10px;
-width: 100%;
-margin-top: 5%;
-font-size: 15px;
-}
-
-#telefono{
-display: block;
-padding: 10px;
-width: 100%;
-margin-top: 5%;
-font-size: 15px;
 }
 
 input[type="submit"]{
